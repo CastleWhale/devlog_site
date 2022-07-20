@@ -31,6 +31,22 @@ font-family: Arial, Helvetica, sans-serif;
   background-color: #ddd; /* Grey background color */
   color: black; /* Black text color */
 }
+.leftcolumn {
+  text-align: center;
+  padding: 14px 20px;
+  line-height: 1.6;
+  background-color: #ddd;
+  float: left;
+  width: 60%;
+}
+
+.rightcolumn {
+  float: left;
+  background-color: #ddd;
+  width: 25%;
+  margin-left: 10%;
+  padding-left: 20px;
+}
 </style>
 </head>
 
@@ -38,17 +54,18 @@ font-family: Arial, Helvetica, sans-serif;
     <div class="navbar">
         <a href="https://benmreilly.github.io/devlog_site/">Home</a>
         <a href="Mods.html">Mods</a>
-        <a href="#">Y</a>
+        <a href="#">Screenshots</a>
     </div>
-<h1>Game Devlog</h1>
-    <div id ="content_area">
-        <img src="Images/GameDemo.gif" alt="Image 1">
-    </div>
-<p>A devlog of The Eternal Dream, a 2D action platformer I have been developing.</p>
 
+<p>A devlog of The Eternal Dream, a 2D action platformer I have been developing.</p>
     <div class="row">
       <div class="leftcolumn">
         <div class ="card">
+          <h1>The Eternal Dream Devlog</h1>
+              <div id ="content_area">
+                  <img src="Images/GameDemo.gif" alt="Image 1">
+              </div>
+
           <h2>Devlog Post #1</h2>
           <h5>July 20th, 2022</h5>
           <p>Welcome to the devlog of my indie game The Eternal Dream! I began this project as an experiment and as a testbed to learn Unity. 
@@ -57,9 +74,27 @@ font-family: Arial, Helvetica, sans-serif;
             visual, contextual, and log based story telling. I am currently a 1 man dev team, occasionally receiving help from friends here and there. I have an
             ambitious vision for this game, that I intend to make a reality. I hope you will join me for the ups and downs of learning to develop an indie game!
           </p>
+          
+          <h2>Devlog Post #2</h2>
+          <h5>July 20th, 2022</h5>
+          <img src="Images/Milanote.PNG" alt="Milanote Screenshot"
+          width="900"
+          />
+          <p>I have created the storyboard and world layout for the game. Though it's all subject to change, I am quite satisfied with the current result. I have designed 
+            12 areas, given each a unique theme, lore, enemies, and challenges. To achieve this I am using a website called 'Milanote' as a virtual corkboard to leave my ideas.
+            It allows you to create 'boards' that can then be filled with 'cards' such as images, notes and to do lists. It has been extremely useful for planning out the ideas
+            for my game.
+          </p>
+          
         </div>
       </div>
+      
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>My discord tag/name is Castle Whale.</p>
+        </div>
     </div>
-
+    
 </body>
 </html>
