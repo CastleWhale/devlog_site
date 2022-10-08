@@ -31,6 +31,21 @@ font-family: Arial, Helvetica, sans-serif;
   background-color: #ddd; /* Grey background color */
   color: black; /* Black text color */
 }
+.leftcolumn {
+  text-align: center;
+  padding: 14px 20px;
+  line-height: 1.6;
+  background-color: #ddd;
+  float: left;
+  width: 60%;
+}
+.rightcolumn {
+  float: left;
+  background-color: #ddd;
+  width: 25%;
+  margin-left: 10%;
+  padding-left: 20px;
+}
 </style>
 </head>
 
@@ -38,13 +53,49 @@ font-family: Arial, Helvetica, sans-serif;
     <div class="navbar">
         <a href="https://benmreilly.github.io/devlog_site/">Home</a>
         <a href="GameDevlog.html">Game Devlog</a>
-        <a href="#">Y</a>
     </div>
 <h1>Mods</h1>
-    <div id ="content_area">
-
+<p>
+  A log of mods I am in the process of building for various games that I play.
+  Currently I am working on making mods for Elden Ring.
+</p>
+<div class="row">
+  <div class="leftcolumn">
+    <div class ="card">
+      <h1>Elden Ring Parameter Modding</h1>
+      <div id ="content_area">
+        <p>
+          I have been working on spell balancing and custom spell scripting through simple param edits. 
+          Here I will document the changes I've made, and how to make them yourself. There aren't many tutorials out there so I've decided to make one.
+          If you want to learn how to do what I've been doing, keep reading; I will break it down step by step to the best of my understanding. I'm no expert but I've made some pretty cool stuff so far.
+          First I will showcase some of the changes I have made, then I will show how I made them. I'll start simple, and work my way up to more advanced spell scripting.
+          Nothing I'm doing here is very technically advanced, there is no coding involved, and the majority is done with simple parameter edits (basically making modifications to a collection of CSV files).
+          What I will show you won't even include needing to unpack the game files for the most part as I haven't done much animation work yet. My goal here is to make Elden Ring modding accessible to even absolute beginners, as I was recently one myself.
+        </p>
+      </div>
     </div>
-<p>A log of mods I am in the process of building for various games that I play.</p>
+  </div>
+</div>
+<div class="rightcolumn">
+  <div class="card">
+    <h2>Valuable Resources made by other Modders (IMPORTANT)</h2>
+    <h3>Elden Ring ID list compiled by Malcom Reynolds</h3>
+    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vToIy4TTeHhzWUHrR13IUSCb9SWPIdooxHRplMVuaMjmAvMPK2hXIHYA4JS956yuE7bPgGNx-GNRe1f/pubhtml#">ID list spreadsheet</a>
+    <p>(Contains documentation of most ID's as well as documentation on unlabeled parameters compiled by the most infamous souls hacker, extremely useful)</p>
+    <h3>DSMapStudio - Used for Map adjustments and param edits</h3>
+    <a href="https://github.com/soulsmods/DSMapStudio">DSMapStudio Param Editor</a>
+    <p>(Slightly more complex but arguably the better tool. Has a dark mode. Can be used for param edits and to view in game locations and make changes to them.)</p>
+    <h3>Yapped Runebear - Used for param edits and CSV merging</h3>
+    <a href="https://github.com/vawser/Yapped-Rune-Bear">Yapped Runebear</a>
+    <p>(Not currently being developed any longer which is partly why MapStudio is arguably better. However, I do most of my param edits in Yapped anyways.)</p>
+    <h3>Video Guide Series Playlist by Scrub Milk</h3>
+    <a href="https://www.youtube.com/watch?v=USA0VnTlNA4&list=PLk3PHlXPeN-hLhvzBwI6BkDzJ5R7wTVaP&ab_channel=ScrubMilk">Scrub Milk's Elden Ring Playlist</a>
+    <p>(Not mandatory for understanding my guide, but extremely helpful and contains an absurd amount of good, relevant information. Shows the process for making many simple mods. Also covers how to setup DSMapStudio, Yapped, Etc.</p>
+  </div>
+</div>    
+
+
+
 
 </body>
 </html>
