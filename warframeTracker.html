@@ -45,6 +45,25 @@ font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border:1px solid black;
 }
+@media (max-width: 768px) {
+  /* styles for screens with a maximum width of 768 pixels */
+  .leftcolumn {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .card3 {
+    width: 70%;
+  }
+  .card2 {
+    width: 90%;
+  }
+  .card {
+    width: 80%;
+  }
+  .center2 {
+    width: 80%;
+  }
+}
 </style>
 </head>
 
@@ -58,6 +77,7 @@ font-family: Arial, Helvetica, sans-serif;
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
+          <p style="color:white">This is a personal use data tracker for Warframe that uses a JSON API call to keep track of time in a specific location in game so as to not miss out on time gated content.</p>
           <p style="color:white">The current time in Cetus is: </p>
         </div>
         <div class="card2" id="content">
@@ -66,7 +86,6 @@ font-family: Arial, Helvetica, sans-serif;
       </div>
     </div>
     <script>
-
       const URL = "https://api.warframestat.us/pc/";
       
       async function makeAPICall() {
@@ -79,7 +98,14 @@ font-family: Arial, Helvetica, sans-serif;
       }
 
       makeAPICall()
-
   </script>
+  <div class="leftcolumn">
+    <H1>How it works:</H1>
+    <img src="Images/JSONscript.png" alt="JSON Screenshot"
+          width="900"
+          class="card3"
+          />
+    <p>Using a JSON script, I am able to pull specific information about the game from api.warframestat.us and display it in HTML. In this case I am looking for the state data of the time cycle in Cetus: data.cetusCycle.state</p>
+  </div>
 </body>
 </html>

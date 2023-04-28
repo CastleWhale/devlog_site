@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Castle Whale Landing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body style="background-color:rgb(24, 25, 26);"></body>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+  background-color: rgb(146, 90, 211);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card2 {
+  text-align: center;
+  background-color: rgba(218, 218, 218, 0.336);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 25px;
+  border:1px solid black;
+  padding: 25px
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: rgb(70, 19, 104); /* Grey background color */
+  color: white; /* Black text color */
+}
+.leftcolumn {
+  text-align: center;
+  padding: 14px 20px;
+  line-height: 1.6;
+  background-color: rgba(218, 218, 218, 0.336);
+  float: left;
+  width: 60%;
+  border-radius: 25px;
+  border:1px solid black;
+}
+.leftcolumn2 {
+  text-align: center;
+  padding: 14px 20px;
+  line-height: 1.6;
+  background-color: rgba(218, 218, 218, 0.336);
+  float: left;
+  width: 60%;
+  border-radius: 25px;
+  border:1px solid black;
+}
+@media (max-width: 768px) {
+  /* styles for screens with a maximum width of 768 pixels */
+  .leftcolumn {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .card3 {
+    width: 50%;
+  }
+  .card2 {
+    width: 90%;
+  }
+  .card {
+    width: 80%;
+  }
+  .center2 {
+    width: 80%;
+  }
+}
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="GameDevlog.html">Unity Devlog</a>
+        <a href="Mods.html">Mods</a>
+        <a href="warframeTracker.html">Warframe Tracker</a>
+    </div>
+<h1 style="color:white">Welcome to my Unreal Engine 5 Devlog</h1>    
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <p>Here I am documenting the process of learning UE5 and building a space sim with survival mechanics. I have begun prototyping many of the core mechanics the game will be built on, including but not limited to movement, combat, leveling up stats, and flying ships.</p>
+          <p>The game I plan to build will be expansive, yet simple and straightforward, which will allow for expansive depth of intertwined systems structured around solid gameplay loops. As someone with a considerable amount of experience with similar games in the genre, I intend to learn from 
+          both the successes and failures of other ambitious developers.
+          </p>
+          <p>My game will draw a heavy inspiration from Sci-Fi genre classics like Star Wars and Star Trek and design philosophies from games such as Star Citizen, No Man's Sky, Minecraft, Ark: Survival Evolved, and Valheim. My goal is to design a game that combines the best features and design philosophies of these games, while avoiding many of the pitfalls that plague them.</p>
+          <p>I hope you will stay tuned as I work to bring my dream game into reality, I want to build a game that first and foremost, I would actually enjoy to play myself while writing a love letter to the Science Fiction genre.</p>
+        </div>
+
+        </div>
+        <div class="leftcolumn2">
+          <h1>Flight Prototype</h1>
+          <p>As I don't yet have any of the final assets that will make it into the game, I have decided to use a free X-Wing model from sketchfab to prototype my flight mechanics.</p>
+          <video  controls class="card2">
+            <source src="Videos/XwingTest.mp4" type="video/mp4">
+          </video>
+          <p>Can currently control Pitch, Yaw, Roll, and Forward Thrust; I plan to eventually implement full 6 Degrees of Freedom similar to Star Citizen's omni directional ship thrusters.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+</html>

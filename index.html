@@ -9,6 +9,14 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
 }
+.btn{
+  background-color: rgb(146, 90, 211);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden; /* Hide overflow */
@@ -42,23 +50,35 @@ font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   border:1px solid black;
 }
+@media (max-width: 768px) {
+  /* styles for screens with a maximum width of 768 pixels */
+  .leftcolumn {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 </style>
 </head>
 
 <body>
     <div class="navbar">
         <a href="#">Home</a>
-        <a href="GameDevlog.html">Game Devlog</a>
+        <a href="GameDevlog.html">Unity</a>
+        <a href="UnrealDevlog.html">Unreal</a>
         <a href="Mods.html">Mods</a>
+        <a href="warframeTracker.html">Warframe Time Tracker</a>
     </div>
 <h1 style="color:white">Welcome to my Personal Devlog Site</h1>    
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
-          <p style="color:white">A simple website created by me. Most of this is a placeholder as I build it up further.</p>
-          <p style="color:white">On the Devlog page, I am documenting the process of teaching myself to develop an indie game.</p>
-          <p style="color:white">On the Mods page, I am documenting the process of modding Elden Ring and showcasing what I have made so far. 
-          </p>
+          <p style="color:white">On the Devlog page, I am documenting the process of teaching myself to develop an indie game in both Unity and UE5. In Unity I am working on a 2D action platformer focused on melee combat and environmental story telling.
+          In Unreal I am working on developing a sandbox spacesim survival game with gathering, crafting, building, combat, and exploration mechanics. Though this is an ambitious goal, I have detailed the principles of game design that will be
+          required to make my dream game a reality, and have begun prototyping critical components and game designs.</p>
+          <p style="color:white">On the Mods page, I am documenting the process of modding Elden Ring and showcasing what I have made so far. My mod is one of the most downloaded Elden Ring magic overhauls on Nexus Mods.</p>
+          <a href="GameDevlog.html" class="btn">Unity</a>
+          <a href="UnrealDevlog.html" class="btn">Unreal</a>
+          <a href="Mods.html" class="btn">Mods</a>
         </div>
       </div>
     </div>
