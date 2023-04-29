@@ -121,6 +121,40 @@ font-family: Arial, Helvetica, sans-serif;
           </video>
           <p>Can currently control Pitch, Yaw, Roll, and Forward Thrust; I plan to eventually implement full 6 Degrees of Freedom similar to Star Citizen's omni directional ship thrusters.</p>
         </div>
+        <div class="leftcolumn2">
+          <h1>Player Prototype</h1>
+          <p>Using the default Unreal mannequin I have created simple mechanics enabling fluid movement.</p>
+          <video  controls class="card2">
+            <source src="Videos/MovementDebug.mp4" type="video/mp4">
+          </video>
+          <p>Can crouch, sprint, jump, and attack. Currently only sprinting consumes stamina, which will regen passively while not sprinting. Attacking currently follows a 3 hit combo system.</p>
+          <img src="Images/ObjectComponents.png" alt="ObjectDemo"
+          width="900"/>
+          <p>I have created an object called BP_ThirdPersonCharacter. I have also made two additional objects BPC_Combat and BPC_PlayerStats that I have attached to the ThirdPersonCharacter object.</p>
+
+          <h3>The Combat Component</h3>
+          <img src="Images/CombatComponent.png" alt="CombatDemo"
+          width="900"/>
+          <p>The combat component enables the 3 hit combo string by creating custom events. A custom event is created for each individual attack in the combo. An integer switch determines which event is used and each event increments the combo index to the next attack up until the last attack where it resets to zero. It also resets to zero if the player stops inputting attacks for long enough.</p>
+          
+          <h3>The Stat Component</h3>
+          <img src="Images/StatComponent.png" alt="StatDemo"
+          width="900"/>
+          <p>The stat component allows me to create stat based logic for the player character, such as sprinting requiring stamina, XP required per level scaling with level, or player death upon running out of health. By creating variables to store data and functions to access those variables, it is possible to allow other game objects to make changes to the player characters stats.</p>
+          <h4>Death Debug Test</h4>
+          <video  controls class="card2">
+            <source src="Videos/DeathDebug.mp4" type="video/mp4">
+          </video>
+          <p>By creating a debug key on my player to call the 'Apply Damage' helper function to the player object, I can simulate taking damage and eventually dying once health reaches zero.</p>
+          <img src="Images/DeathDebug1.png" alt="deathDemo1"
+          width="900"/>
+          <p>The 'Apply Damage' helper function triggers another event on my character's event graph, 'AnyDamage' which itself calls the 'Decrease Health' function of my stat component before checking a boolean conditional to evaluate if the player should be dead. If the condition evaluates to true, the 'Die' function is called which disables player input and ragdolls the physics mesh.</p>
+          <img src="Images/DeathDebug2.png" alt="deathDemo2"
+          width="900"/>
+          <p>The 'Decrease Health' function itself subtracts the passed through incoming damage value from the current health value and evaluates if the 'IsDead?' boolean condition should be set to true. It also handles properly displaying and updating the values in the HUD elements.</p>
+          <img src="Images/DeathDebug3.png" alt="deathDemo3"
+          width="900"/>
+        </div>
       </div>
     </div>
 
